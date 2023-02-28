@@ -1,0 +1,120 @@
+<!--"Proyecto Final"
+TICMAS - Acevedo Nahuel
+Argentina Programa-->
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae - Acevedo Nahuel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="galery/curriculum_ico.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@900&family=Source+Sans+Pro:wght@200&family=Tilt+Warp&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="BLOCK2">
+            <H1 class="nombre">Pamela</H1>
+            <h2 class="apellido">Moyano</h2>
+            <H2 class="curriculum">Curriculum Vitae</H2>
+        </div>
+        <div class="BLOCK1">
+            <img src="./galery/foto_perfil_cv.jpg" alt="Imágen de perfil" class="image">
+        </div>
+        <div class="BLOCK3">
+            <h3 class="acerca_de_mi">ACERCA DE MÍ</h3>
+            <P class="parrafo_descripcion"> Soy una persona proactiva, organizada
+                y responsable, con buenas relaciones
+                interpersonales.
+                Siempre tengo la mejor disposición para la
+                realización de mis labores. Busco un puesto
+                de trabajo desafiante.</P>
+            <h3 class="información">INFORMACIÓN</h3>
+            <section class="section1">
+                <a href="#" class="btn">Telefono</a>
+            </section>
+            <ul class="lista1">
+                <li>Correo: pamela.moyano.91@gmail.com
+                </li>
+                <li>Fecha de nacimiento: 6/7/1991 
+                </li>
+                <li>Dirección: San Martín 1197
+                </li>
+                <li>San Nicolás, Bs. As.</li>
+            </ul>
+        </div>
+        <div class="BLOCK4">
+            <h3 class="expe">EXPERIENCIA LABORAL</h3>
+            <ul class="lista2">
+                <li>Shell 2015-2022</li>
+                <p> Atención al público, control de stock, reposición de
+                  productos, control de calidad, herramientas informáticas y
+                  organización.
+                  </p>
+              </ul>
+              <ul>
+                 <li>Hotel La Rosa 2012-2015</li>
+                 <p>Tareas relacionadas a la selección de personal, administración de actividades, y atención del público.
+                  </p>
+              </ul>
+              <ul>
+                  <li>Matriz S.A. 2009-2012</li>
+                  <p>Labores de mantenimiento, arreglos, limpieza y orden.
+                  </p>
+              </ul>
+        </div>
+        <div class="BLOCK5">
+            <h3 class="educación">EDUCACIÓN</h3>
+            <ul class="educacion_lista">
+                <li>ESCUELA SECUNDARIA N°: 1898</li>
+                    <p>"San Casimiro"</p>
+                <li>ARGENTINA PROGRAMA</li>
+                    <p>#SéProgramar</p>
+                <li>PDC - EGG EDUCACIÓN</li>
+                    <p>"Programación desde cero".</p>
+                <li>CODERHOUSE</li>
+                    <p>Introducción al desarrollo web</p>
+            </ul>
+        </div>
+        <div class="BLOCK6">
+            <h3 class="hablamos">REDES</h3>
+            <a href="https://web.whatsapp.com/" target="_blank" class="redes">
+                <img src="./galery/image_whatsapp.png" alt="Icono de WhatsApp"></a>
+            <a href="https://www.instagram.com/" target="_blank" class="redes">
+                <img src="./galery/image_instagram.png" alt="Icono de Instagram">
+        </div>
+        <div class="BLOCK7">
+            <a href="https://www.linkedin.com/" target="_blank" class="LinkedIn">LinkedIn</a>
+        </div>
+      </div>
+</body>
+<script>
+    $(function(){
+        var btn = $('.btn');
+        btn.on("click",function(){
+            btn.addClass('btn-progress');
+            setTimeout(() => {
+                btn.addClass('btn-fill')
+                btn.css('color','ff0000')
+                btn.text('Cargando...')
+            }, 500);
+            setTimeout(() => {
+                btn.removeClass('btn-fill')
+                btn.removeAttr('style');
+            }, 4100);
+            setTimeout(() => {
+                btn.removeClass('btn-progress')
+                btn.removeClass('btn-fill')
+                btn.text('+549112459036');
+            }, 4100);
+        })
+    })
+</script>
+</html>

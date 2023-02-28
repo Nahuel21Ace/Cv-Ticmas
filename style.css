@@ -1,0 +1,209 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    cursor: url(galery/cursor.png), auto;
+    font-family: 'League Spartan', sans-serif;
+  
+
+}
+
+.container {  display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 0.5fr 1.2fr 1.9fr 0.3fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "BLOCK1 BLOCK2"
+      "BLOCK3 BLOCK4"
+      "BLOCK5 BLOCK6"
+      "BLOCK7 BLOCK7";
+  }
+  
+  .BLOCK2 { grid-area: BLOCK2;
+                             
+}
+
+.nombre{
+    margin-left: 100px;
+    margin-top: 60px;
+    font-size: 50px;
+    color: #0E3569;
+
+
+}
+
+.apellido{
+    margin-left: 100px;
+    margin-top: 10px;
+    font-size: 50px;
+    color: #0E3569;
+}
+
+.curriculum{
+
+    margin-left: 100px;
+    margin-top: 10px;
+    font-size: 30px;
+    color: #000000;    
+}
+  
+  .BLOCK1 { grid-area: BLOCK1;
+    width: 90%;
+    text-align: center;
+    background-color:#EFEFEF
+
+}
+
+.image{
+    width: 200px;
+    height: 200px;
+    margin: center;
+    margin-top: 50px;
+    
+}
+  
+  .BLOCK3 { grid-area: BLOCK3;
+    width: 90%;
+    background-color:#EFEFEF
+    
+    
+    
+}
+
+.acerca_de_mi{
+  color:#064D93;
+  margin-left: 50px;
+  margin-bottom: 15px;
+}
+
+.parrafo_descripcion{
+  margin-left: 50px;
+  margin-bottom: 15px;
+  margin-right: 30px;
+
+}
+
+.información{
+  color:#064D93;
+  margin-left: 50px;
+  margin-bottom: 15px;
+}
+
+.section1{
+  margin-top: 30px;
+  margin-bottom: 40px;
+  margin-left: 100px;
+}
+
+.btn{
+  position: relative;
+  padding: 15px;
+  width: 200px;
+  background-color: transparent;
+  color:  #064D93;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  border-radius: 4px;
+  font-weight: 600;
+  overflow: hidden;
+  border: 2px solid  #064D93;
+  text-decoration: none;
+  justify-content: center;
+}
+
+.btn-progress{
+  width: 200px;
+  color: transparent;
+}
+
+.btn-fill:after{
+  background-color:  #064D93;
+  opacity: 6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform: scale(0);
+  transform-origin: 0;
+  display: block;
+  animation: cargando 3.2s linear forwards;
+  content: "";
+}
+
+@keyframes cargando{
+  from{
+    transform: scale(0);
+  }
+  to{
+    transform: scale(1);
+  }
+}
+  
+.lista1{
+  margin-left: 65px;
+  margin-bottom: 15px;
+
+}
+  .BLOCK4 { grid-area: BLOCK4;}
+
+  .expe{
+    color: #064D93;
+    margin-top: 50px;
+  }
+
+  .lista2{
+
+    margin-top: 50px;
+  }
+  
+  .BLOCK5 { grid-area: BLOCK5;
+    }
+.educación{
+
+  color: #064D93;
+  margin-left: 50px;
+  margin-bottom: 15px;
+  margin-top: 20px;
+
+}    
+
+  .educacion_lista{
+    list-style-type: none;
+    margin-left: 50px;
+    margin-bottom: 15px;
+
+  }
+  
+  .BLOCK6 { grid-area: BLOCK6;}
+  
+
+  .hablamos{
+    color: #064D93;
+    margin-top: 50px;
+  }
+
+  .redes {
+    height: 100px;
+    width: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 85%;
+     
+  }
+
+  .BLOCK7 { grid-area: BLOCK7;
+    background-color: #0E3569;
+   
+}
+
+  .LinkedIn{
+  color: #ffffff;
+  font-size: 40px;
+  font-family: 'Tilt Warp', cursive;
+  display:flex;
+  justify-content: center;
+}
+  
